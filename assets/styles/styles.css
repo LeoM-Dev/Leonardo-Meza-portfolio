@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/*root*/
+:root {
+  --primary-color: #72a8ff;
+  --secondary-color: #b6d2ff;
+  --background-color: #e5e5f7;
+  --text-color: #252525;
+  --white-color: #ffffff;
+  --html-color: #ff6d00;
+  --css-color: #039be5;
+  --js-color: #ffd600;
+  --react-color: #61dafb;
+  --figma-color: #66bb6a;
+  --python-color: #039be5;
+  --maWidth-size: 960px;
+  --h1-fontSize: 50px;
+  --h2-fontSize: 32px;
+  --h3-fontSize: 24px;
+  --h4-fontSize: 16px;
+  --p-fontSize: 16px;
+  --res-h1-fontSize: 32px;
+  --res-h2-fontSize: 24px;
+  --res-h3-fontSize: 16px;
+  --res-h4-fontSize: 12px;
+  --res-p-fontSize: 12px;
+}
+
+/*General*/
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  list-style: none; 
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--background-color);
+  opacity: 1;
+  background-image: radial-gradient(var(--primary-color) 0.5px, var(--background-color) 0.5px);
+  background-size: 10px 10px;
+  color: var(--text-color);
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  margin: 16px 0;
+  max-width: 960px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.containedButton {
+  display: inline-block;
+  padding: 8px 30px;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border-radius: 32px;
+}
+
+.outlinedButton {
+  display: inline-block;
+  padding: 8px 30px;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 32px;
+}
+
+h1 {
+  font-size: var(--h1-fontSize);
+  line-height: 1;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: var(--h2-fontSize);
+  font-weight: 500;
+}
+
+h3 {
+  font-size: var(--h3-fontSize);
+  font-weight: 400;
+}
+
+h4 {
+  font-size: var(--h4-fontSize);
+  font-weight: 400;
+}
+
+p {
+  font-size: var(--p-fontSize);
+  font-weight: 400;
+}
+
+.subtitle {
+  width: fit-content;
+  position: relative;
+}
+
+.subtitle::before {
+  content: "";
+  width: 100%;
+  height: 20px;
+  background-color: var(--secondary-color);
+  position: absolute;
+  z-index: -1;
+  right: -8px;
+  bottom: 4px;
+  opacity: 30%;
+}
+
+/*Header*/
+#nav {
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-radius: 64px;
+}
+
+#logo {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+#logo span {
+  color: var(--primary-color);
+}
+
+#navLinks {
+  display: flex;
+  gap: 16px;
+}
+#navLinks li a {
+  transition: 0.2s;
+}
+
+#navLinks li a:hover,
+#navLinks li a:active,
+#navLinks li a:focus {
+  color: var(--primary-color);
+}
+
+.activeLink {
+  color: var(--primary-color);
+}
+
+/* Site body */
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+#siteBody {
+  padding: 64px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+#hero {
+  text-align: center;
+  margin: 0 0 48px 0;
+}
+
+#heroImg {
+  width: 180px;
+  border-radius: 50%;
+}
+
+#hero ul {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+#starredSection {
+  padding: 64px;
+  display: flex;
+  justify-content: center;
+  border-radius: 32px;
+  height: 490px;
+  background: url(../media/StarredSectionImg.png);
+  background-size: cover;
+  color: var(--white-color);
+}
+
+#about span {
+  padding: 16px 0 0 0;
+  color: var(--primary-color);
+}
+
+#skills, #proyects {
+  align-items: center;
+  gap: 16px;
+}
+
+#skillsContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+#skillsContainer li {
+  border: 1px solid var(--primary-color);
+  color: var(--text-color);
+  border-radius: 32px;
+  padding: 8px 16px;
+}
+
+#skillsContainer li:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
+/*footer*/
+#footer {
+  padding: 32px 0;
+  text-align: center;
+  border-top: 1px solid var(--primary-color);
+}
+
+@media only screen and (max-width: 768px) {
+  /*General*/
+  body {
+    margin: 16px;
+  }
+
+  h1 {
+    font-size: var(--res-h1-fontSize);
+  }
+  
+  h2 {
+    font-size: var(--res-h2-fontSize);
+  }
+  
+  h3 {
+    font-size: var(--res-h3-fontSize);
+  }
+  
+  h4 {
+    font-size: var(--res-h4-fontSize);
+  }
+  
+  p {
+    font-size: var(--res-p-fontSize);
+  }
+
+  /*Header*/
+  #navLinks {
+    display: none;
+  }
+}
