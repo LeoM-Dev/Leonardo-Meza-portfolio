@@ -208,7 +208,6 @@ p {
 }
 
 #skillsContainer {
-  display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 16px;
@@ -218,7 +217,7 @@ p {
   background-color: var(--white-color);
   border: 1px solid var(--primary-color);
   color: var(--text-color);
-  border-radius: 32px;
+  border-radius: 10px;
   padding: 8px 16px;
 }
 
@@ -236,21 +235,25 @@ p {
 #skillsContainer figure img {
   width: 70px;
   height: auto;
+  justify-content: center;
+  padding: 5px;
+  margin: 0 auto;
 }
 
 #skillsContainer figcaption {
+  justify-content: center;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
   display: block;
-  text-align: center
 }
 
 #proyects {
-  display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
 #proyectsContainer {
-  display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 16px;
