@@ -32,7 +32,7 @@
   padding: 0;
   border: none;
   outline: none;
-  list-style: none; 
+  list-style: none;
   box-sizing: border-box;
 }
 
@@ -175,6 +175,8 @@ p {
 
 #heroImg {
   width: 180px;
+  height: 180px;
+  margin: 0 auto;
   border-radius: 50%;
 }
 
@@ -223,7 +225,66 @@ p {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
+#proyects {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 
+#proyectsContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.card {
+  position:relative;
+  width: 300px;
+  height: 200px;
+  box-sizing: border-box;
+  background-color: var(--white-color);
+  border: 5px solid var(--white-color);
+  border-radius: 16px;
+  gap: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;;
+}
+
+.card:hover {
+  box-shadow: rgb(3, 155, 229) 0px 8px 15px,
+  rgb(255, 255, 255) 0px 6px 6px;
+  transition: 0.3s ease-in-out;
+}
+
+.cardTittle {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: default;
+}
+
+.cardDescription {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-color);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
+  word-break: break-all;
+  -webkit-line-clamp: 3;
+  cursor: default;
+}
+
+.carText span{
+  color: var(--text-color);
+  font-size: 15px;
+  font-weight: 500;
+  cursor: default;
+}
 /*footer*/
 #footer {
   padding: 32px 0;
@@ -240,25 +301,33 @@ p {
   h1 {
     font-size: var(--res-h1-fontSize);
   }
-  
+
   h2 {
     font-size: var(--res-h2-fontSize);
   }
-  
+
   h3 {
     font-size: var(--res-h3-fontSize);
   }
-  
+
   h4 {
     font-size: var(--res-h4-fontSize);
   }
-  
+
   p {
     font-size: var(--res-p-fontSize);
+  }
+
+  .logo {
+    font-size: 24px;
   }
 
   /*Header*/
   #navLinks {
     display: none;
+  }
+
+  #logo{
+    font-size: 24px;
   }
 }
