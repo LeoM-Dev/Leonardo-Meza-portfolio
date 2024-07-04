@@ -254,8 +254,7 @@ p {
 }
 
 .card:hover {
-  box-shadow: rgb(3, 155, 229) 0px 8px 15px,
-  rgb(255, 255, 255) 0px 6px 6px;
+  box-shadow: rgba(74, 78, 81, 0.2) 0px 8px 24px;
   transition: 0.3s ease-in-out;
 }
 
@@ -284,6 +283,7 @@ p {
   font-size: 15px;
   font-weight: 500;
   cursor: default;
+  float: right;
 }
 /*footer*/
 #footer {
