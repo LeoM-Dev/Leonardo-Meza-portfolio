@@ -208,6 +208,7 @@ p {
 }
 
 #skillsContainer {
+  display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 16px;
@@ -235,12 +236,14 @@ p {
 #skillsContainer figure img {
   width: 70px;
   height: auto;
+  display: flex;
   justify-content: center;
   padding: 5px;
   margin: 0 auto;
 }
 
 #skillsContainer figcaption {
+  display: flex;
   justify-content: center;
   text-align: center;
   font-size: 16px;
@@ -249,11 +252,13 @@ p {
 }
 
 #proyects {
+  display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
 #proyectsContainer {
+  display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 16px;
