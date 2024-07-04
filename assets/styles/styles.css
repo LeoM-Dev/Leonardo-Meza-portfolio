@@ -215,6 +215,7 @@ p {
 }
 
 #skillsContainer li {
+  background-color: var(--white-color);
   border: 1px solid var(--primary-color);
   color: var(--text-color);
   border-radius: 32px;
@@ -223,6 +224,23 @@ p {
 
 #skillsContainer li:hover {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: 0.3s ease-in-out;
+}
+
+#skillsContainer figure {
+  max-width: 100%;
+  height: auto;
+  padding: 20px;
+}
+
+#skillsContainer figure img {
+  width: 70px;
+  height: auto;
+}
+
+#skillsContainer figcaption {
+  display: block;
+  text-align: center
 }
 
 #proyects {
@@ -278,12 +296,11 @@ p {
   cursor: default;
 }
 
-.carText span{
+.card span{
   color: var(--text-color);
   font-size: 15px;
   font-weight: 500;
   cursor: default;
-  float: right;
 }
 /*footer*/
 #footer {
