@@ -206,6 +206,7 @@ p {
 }
 
 #skillsContainer li {
+  width: 190px;
   background-color: var(--white-color);
   border: 1px solid var(--primary-color);
   color: var(--text-color);
@@ -222,14 +223,16 @@ p {
   max-width: 100%;
   height: auto;
   padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 #skillsContainer figure svg {
   width: 70px;
   height: 80px;
-  display: flex;
-  justify-content: center;
   padding: 5px;
+  padding-top: 15px;
   margin: 0 auto;
 }
 
@@ -240,6 +243,13 @@ p {
   font-size: 16px;
   font-weight: 600;
   display: block;
+}
+
+#python figure svg {
+  width: 70px;
+  height: auto;
+  margin: 0;
+  flex-shrink: 0;
 }
 
 #proyects {
@@ -266,14 +276,17 @@ p {
 }
 
 #proyects img {
-  max-width: 100%;
-  height: 100%;
+  width: 450px;
+  height: 285px;
   border-radius: 8px;
+  display: flex;
+  align-items: center;
 }
 
 #proyects h3 {
   color: var(--text-color);
   margin: 10px;
+  margin-left: 18px;
   text-align: left;
   font-weight: bold;
 }
@@ -291,11 +304,12 @@ p {
 }
 
 #proyects li span {
-  background-color: var(--white-color);
+  background-color: transparent;
+  border: var(--primary-color) solid 1px;
   font-weight: 500;
   padding: 5px;
   padding-right:10px ;
-  border-radius: 4px;
+  border-radius: 25px;
   display: flex;
   align-items: center;
 }
@@ -330,7 +344,7 @@ p {
   border-top: 1px solid var(--primary-color);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   /*General*/
   body {
     margin: 16px;
@@ -373,8 +387,14 @@ p {
     font-size: 18px;
   }
 
-  .card {
-    width: 410px;
-    height: 300;
+  #proyects article {
+  max-width: 100%;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  }
+  .infoProyecto {
+    width: 450px;
   }
 }
