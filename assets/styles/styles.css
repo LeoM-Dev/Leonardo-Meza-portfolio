@@ -388,10 +388,6 @@ p {
   }
 
   #proyects article {
-  max-width: 100%;
-  height: auto;
-  padding: 20px;
-  display: flex;
   flex-direction: column;
   }
   .infoProyecto {
