@@ -387,7 +387,7 @@ p {
     font-size: 18px;
   }
   
-  #skillsContainer li, #proyects figure, #proyects figure img, #infoProyects{
+  #proyects figure, #proyects figure img, #infoProyects{
     width: 100%;
     height: auto;
   } 
