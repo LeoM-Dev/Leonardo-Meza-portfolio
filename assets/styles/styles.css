@@ -523,4 +523,30 @@ ul {
   .text-content {
     order: 2;
   }
+  #heroImg {
+    width: 250px;
+    height: 250px;
+  }
+
+  #proyects article {
+    flex-direction: column;
+  }
+
+  #proyects img {
+    width: 100%;
+    height: auto;
+  }
+
+  #proyects div {
+    margin: 10px 0;
+  }
+
+  #skillsContainer li {
+    width: 100%;
+  }
+
+  #starredSection {
+    height: auto;
+  }
+}
 }
